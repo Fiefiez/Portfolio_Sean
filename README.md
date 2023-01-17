@@ -23,7 +23,7 @@ Deployment
 📖 Portfolio
 Describe your project in 1 or 2 sentences.
 
-Portfolio is a...
+Portfolio is a project where i have to clone the given template and make it look as it is shown.
 
 🛠 Built With
 Tech Stack
