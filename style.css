@@ -46,7 +46,7 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 380px;
-  background-color: var(--main-bg-color);
+  background-color: var(--gray-background-color);
 }
 
 header {
@@ -414,4 +414,14 @@ h1 {
   flex-direction: column;
   padding-left: 0.9rem;
   background-color: var(--main-bg-color);
+}
+
+h2 {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+display: flex;
+align-items: center;
 }
