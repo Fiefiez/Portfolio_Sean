@@ -417,11 +417,10 @@ h1 {
 }
 
 h2 {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-display: flex;
-align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
 }
