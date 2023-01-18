@@ -8,7 +8,6 @@
   --tag-background-color: #ebebff;
   --button-color: #396df2;
   --normal-text-color: #344563;
-  --container-bg: #e5e5e5;
   --blue-color: #344563;
   --info-color: #71869a;
   --black-color: #000;
@@ -29,6 +28,12 @@ body {
   outline: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 li {
   list-style: none;
 }
@@ -41,7 +46,7 @@ a {
   width: 100%;
   margin: 0 auto;
   max-width: 380px;
-  background-color: var(--container-bg);
+  background-color: var(--main-bg-color);
 }
 
 header {
@@ -197,4 +202,216 @@ h1 {
 
 .social-icons:hover {
   color: #6070ff;
+}
+
+/* Card Works */
+
+.card-info {
+  margin-top: 2rem;
+  display: grid;
+  grid-template: repeat(4, 25%) / auto;
+  padding: 17% 5%;
+  gap: 50px;
+}
+
+.personal-info {
+  margin-top: 2.8rem;
+}
+
+.card-item {
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 327px;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: var(--main-bg-color);
+}
+
+.title {
+  margin-top: -10px;
+  font-style: normal;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.list {
+  display: flex;
+  padding-inline-start: 0;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.top-title {
+  font-style: normal;
+  color: var(--normal-text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.info {
+  font-style: normal;
+  color: var(--info-color);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--normal-text-color);
+}
+
+.skills {
+  font-weight: 500;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  width: 96%;
+}
+
+.skills > span > img:hover {
+  background-color: var(--light-text-color);
+}
+
+.hr-line {
+  border-top: 1px solid #dfe1e6;
+  margin-inline-start: 0;
+  width: 325px;
+}
+
+.content > h1 {
+  color: white;
+}
+
+.text-form {
+  padding: 0 12px;
+}
+
+.add-skills {
+  background: #f7f7f9;
+  display: flex;
+  gap: 15px;
+  width: 305px;
+  height: 66.72px;
+  border-radius: 10px;
+  padding: 3% 6%;
+  margin: 3% 0;
+  align-items: center;
+}
+
+.tags {
+  display: flex;
+  padding: 0;
+  gap: 12px;
+  margin-bottom: 3em;
+}
+
+.tag-images-1 {
+  display: none;
+}
+
+.button,
+.check-button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 100px;
+  height: 48px;
+  padding: 13px;
+  gap: 10px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10em;
+}
+
+.button-1 {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 118px;
+  height: 44px;
+  padding: 13px 13px;
+  gap: 10px;
+  color: var(--button-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  margin-top: 10em;
+}
+
+.button:hover,
+.check-button:hover,
+.button-1:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.about > h1 {
+  margin-bottom: 0;
+}
+
+.skill-list {
+  padding: 10% 0;
+}
+
+.skill-list > ul {
+  padding-inline-start: 2%;
+}
+
+.language-extend {
+  padding-inline-start: 0;
+}
+
+.text-skills {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.content {
+  background: url("./images/Contact.png");
+  text-align: center;
+  color: white;
+  margin-top: -718px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.skills-languages {
+  padding: 0 0 2px 4px;
+}
+
+.about {
+  border-top-right-radius: 132px;
+  margin-top: 180px;
+  padding-top: 3%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 0.9rem;
+  background-color: var(--main-bg-color);
 }
